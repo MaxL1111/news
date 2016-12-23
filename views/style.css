@@ -1,0 +1,40 @@
+body{
+
+}
+
+#header {
+    height: 80px;
+    width: 700px;
+    background-color: #008b8b;
+    margin:3px auto;
+}
+
+
+#content {
+    width: 700px;
+    margin:3px auto;
+}
+
+
+.tab {
+    border: 1px solid black;
+    background-color: gainsboro;
+    width: 700px;
+    margin:3px auto;
+}
+
+p {
+    font: 14px Verdana;
+}
+
+th {
+    text-align: left;
+    font:bold 14px Verdana;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font:bold 15px Verdana;
+    color: midnightblue ;
+}
