@@ -18,7 +18,7 @@ function News_getAll() {
 function News_getOne($id) {
     sql ();
 
-    $sql = 'SELECT text FROM news WHERE id="'.$id.'"';
+    $sql = 'SELECT text, title FROM news WHERE id="'.$id.'"';
     $res = mysql_query($sql);
     $ret = [];
 while (false !== ($row = mysql_fetch_array($res))){

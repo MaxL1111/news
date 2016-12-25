@@ -21,9 +21,9 @@
 
 <form action="edit.php?id=<?php echo $item['id'] ?>" method="post">
     <p>Заголовок статьи  <input type="text" name="title" value="<?php  echo $item['title']; ?>"></p>
-    <label><p>Описание статьи <br> <textarea name="description" cols="30" rows="4"><?php  echo $item['description']; ?>
+    <label><p>Описание статьи <br> <textarea name="description" cols="30" rows="4"><p><?php  echo $item['description']; ?></p>
             </textarea></p></label>
-    <label><p>Текст статьи <br> <textarea name="text" cols="30" rows="4" ><?php  echo $item['text']; ?>
+    <label><p>Текст статьи <br> <textarea name="text" cols="30" rows="4" ><p><?php  echo $item['text']; ?></p>
             </textarea></p></label>
     <?php endforeach;   ?>
     <input type="submit" value="Изменить">
