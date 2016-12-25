@@ -1,5 +1,5 @@
 body{
-
+padding-top: 0px;
 }
 
 #header {
@@ -23,8 +23,18 @@ body{
     margin:3px auto;
 }
 
+input {
+    margin-top:5px ;
+}
+
 p {
     font: 14px Verdana;
+
+}
+
+h2{
+    margin-top: 0px;
+    padding-top: 20px;
 }
 
 th {
@@ -37,4 +47,10 @@ a {
     text-decoration: none;
     font:bold 15px Verdana;
     color: midnightblue ;
+}
+
+form {
+    width: 670px;
+    border: 1px solid #cccccc;
+    padding: 15px;
 }

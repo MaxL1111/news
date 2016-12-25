@@ -14,22 +14,19 @@
 
 
 <div id="content">
+    <hr>
+    <p><?php echo $a ?></p><br>
+    <p><?php echo $b ?></p><br>
+    <hr>
 
-    <?php
-
-    foreach ($items as $item): ?>
-    <table class="tab">
-        <tr>
-            <th><?php  echo $item['title']; ?></th>
-        </tr>
-
-        <tr>
-            <td><?php  echo $item['text']; ?> </td>
-        </tr>
-        <?php endforeach;   ?>
-    </table>
-
+    <a href="index.php">Вернуться на главную страницу</a>
 </div>
+
+
+
+
+
+
 
 
 
