@@ -19,13 +19,13 @@
 
 <?php foreach ($items as $item): ?>
 
-<form action="edit.php?id=<?php echo $item['id'] ?>" method="post">
-    <p>Заголовок статьи  <input type="text" name="title" value="<?php  echo $item['title']; ?>"></p>
-    <label><p>Описание статьи <br> <textarea name="description" cols="30" rows="4"><p><?php  echo $item['description']; ?></p>
-            </textarea></p></label>
-    <label><p>Текст статьи <br> <textarea name="text" cols="30" rows="4" ><p><?php  echo $item['text']; ?></p>
-            </textarea></p></label>
-    <?php endforeach;   ?>
+<form action="edit.php?id=<?php echo $item->id ?>" method="post">
+    <p>Заголовок статьи</p>  <input type="text" name="title" value="<?php  echo $item->title; ?>">
+    <label><p>Описание статьи</p> <textarea name="description" cols="30" rows="4"><?php  echo $item->description; ?>
+            </textarea></label>
+    <label><p>Текст статьи</p> <textarea name="text" cols="30" rows="4" ><?php  echo $item->text; ?>
+            </textarea></label>
+    <?php endforeach;   ?><br>
     <input type="submit" value="Изменить">
 </form>
 

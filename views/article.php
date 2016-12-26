@@ -20,11 +20,11 @@
     foreach ($items as $item): ?>
     <table class="tab">
         <tr>
-            <th><?php  echo $item['title']; ?></th>
+            <th><?php  echo $item->title; ?></th>
         </tr>
 
         <tr>
-            <td><?php  echo $item['text']; ?> </td>
+            <td><?php  echo $item->text; ?> </td>
         </tr>
         <?php endforeach;   ?>
     </table>

@@ -4,7 +4,6 @@
 require __DIR__.'/models/news.php';
 
 
-
 if(!empty($_POST)){
     $data = [];
     if (!empty($_POST['title']&& $_POST['descr'] && $_POST['text'] )){
@@ -14,13 +13,12 @@ if(!empty($_POST)){
     }
 
 if (isset($data['title']) && isset($data['descr']) && isset($data['text'])){
-    News_insertOne($data);
+
+    News :: News_insertOne($data);
     header('Location: /2news/index.php');
     die;
 }
-
 }
-
 
 include  __DIR__.'/views/add.php';
 

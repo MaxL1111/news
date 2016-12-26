@@ -4,9 +4,12 @@ require __DIR__.'/models/news.php';
 
 
 $id = $_GET['id'];
-$items = News_getOneall($id);
+
+//$it = new News();
+//$items = $it -> News_getOneall($id);
 
 
+$items = News :: News_getOneall($id);
 
 
 
@@ -21,7 +24,12 @@ if(!empty($_POST && $_GET)){
 
     if (isset($data['title']) && isset($data['description']) && isset($data['text']) && isset($id)){
 
-        News_updateOne($data,$id);
+       // $i = new News();
+       // $i-> News_updateOne($data,$id);
+
+        News :: News_updateOne($data,$id);
+
+
         header('Location: /2news/index.php');
         die;
     }
