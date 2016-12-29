@@ -19,7 +19,7 @@
 
 <?php foreach ($items as $item): ?>
 
-<form action="edit.php?id=<?php echo $item->id ?>" method="post">
+<form action="index.php?ctrl=News&act=Edit2&id=<?php echo $item->id ?>" method="post">
     <p>Заголовок статьи</p>  <input type="text" name="title" value="<?php  echo $item->title; ?>">
     <label><p>Описание статьи</p> <textarea name="description" cols="30" rows="4"><?php  echo $item->description; ?>
             </textarea></label>

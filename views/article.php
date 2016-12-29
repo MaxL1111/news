@@ -4,7 +4,7 @@
     <META name="Content-Type" content="text/html; charset=utf-8">
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="views/style.css">
-    <title>Новости</title>
+    <title>Одна новость</title>
 </head>
 <body>
 
